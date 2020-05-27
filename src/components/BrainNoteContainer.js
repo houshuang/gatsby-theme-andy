@@ -1,4 +1,3 @@
-[warn] Ignored unknown option { fluid: false }.
 import React from 'react';
 import { useStackedPagesProvider, LinkToStacked } from 'react-stacked-pages-hook';
 
