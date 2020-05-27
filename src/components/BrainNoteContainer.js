@@ -1,4 +1,4 @@
-[warn] Ignored unknown option `{ "fluid": false }`.
+[warn] Ignored unknown option { fluid: false }.
 import React from 'react';
 import { useStackedPagesProvider, LinkToStacked } from 'react-stacked-pages-hook';
 
@@ -34,7 +34,7 @@ const StackedPageWrapper = ({
 
 const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
   // process data from gatsby pageQuery API
-  const processPageQuery = React.useCallback(x => x.json.data.brainNote, []);
+  const processPageQuery = React.useCallback((x) => x.json.data.brainNote, []);
   const [
     stackedPages,
     stackedPageStates,
