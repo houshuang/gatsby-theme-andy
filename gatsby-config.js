@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = ({
-  notesDirectory = 'content/',
+  notesDirectory = 'content/brain/',
   notesFileExtensions = ['.md', '.mdx'],
   noteTemplate = path.join(__dirname, 'src/templates/note.js'),
   additionalNoteTypes = {},
