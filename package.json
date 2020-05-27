@@ -33,7 +33,7 @@
     "react-dom": "^16.13.1"
   },
   "dependencies": {
-    "@aengusm/gatsby-theme-brain": "1.0.5",
+    "@aengusm/gatsby-theme-brain": "1.0.11",
     "@tippyjs/react": "^4.0.2",
     "querystring": "^0.2.0",
     "react-stacked-pages-hook": "^0.2.0"
