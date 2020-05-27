@@ -1,3 +1,4 @@
+[warn] Ignored unknown option { fluid: false }.
 import React from 'react';
 import { useStackedPagesProvider, LinkToStacked } from 'react-stacked-pages-hook';
 
@@ -40,19 +41,18 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
     navigateToStackedPage,
     ContextProvider,
     PageIndexProvider,
-    scrollContainer,
+    setRef,
   ] = useStackedPagesProvider({
     firstPageSlug: slug,
     location,
     processPageQuery,
-    containerRef: scrollContainer,
     pageWidth: 625,
   });
 
   return (
     <div className="notes-layout">
       <Header siteMetadata={siteMetadata} />
-      <div className="note-columns-scrolling-container" ref={scrollContainer}>
+      <div className="note-columns-scrolling-container" ref={setRef}>
         <div className="note-columns-container" style={{ width: 625 * (stackedPages.length + 1) }}>
           <ContextProvider value={{ stackedPages, navigateToStackedPage }}>
             {/* Render the first page */}
